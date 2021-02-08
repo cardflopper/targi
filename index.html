@@ -1,0 +1,39 @@
+
+<html>
+
+    <head>
+        <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui"
+    />
+        <link rel="stylesheet" href="style.css"/>
+    </head>
+    
+    <body>
+        <!--<img id="logo" src="" alt="logo"/>-->
+        <div class="status"><span class="w">0 wares</span>, <span class="c">0 coins</span></div>        
+        <div class="row">
+            <div class="control"><button onclick="adjust('salt',-1)">–</button></div>
+            <div class="info"><img src="images/targi_salt_icon.png"/><span class="amount ware salt">0</span></div>
+            <div class="control"><button onclick="adjust('salt',1)">+</button></div>
+        </div>
+        <div class="row">
+            <div class="control"><button onclick="adjust('pepper',-1)">–</button></div>
+            <div class="info"><img src="images/targi_pepper_icon.png"/><span class="amount ware pepper">0</span></div>
+            <div class="control"><button onclick="adjust('pepper',1)">+</button></div>
+        </div>
+        <div class="row">
+            <div class="control"><button onclick="adjust('dates',-1)">–</button></div>
+            <div class="info"><img src="images/targi_dates_icon.png"/><span class="amount ware dates">0</span></div>
+            <div class="control"><button onclick="adjust('dates',1)">+</button></div>
+        </div>
+        <div class="row last">
+            <div class="control"><button onclick="adjust('coins',-1)">–</button></div>
+            <div class="info"><img src="images/targi_coins_icon.png"/><span class="amount coins">0</span></div>
+            <div class="control"><button onclick="adjust('coins',1)">+</button></div>
+        </div>
+    </body>
+
+    <script src="code.js"></script>
+</html>
